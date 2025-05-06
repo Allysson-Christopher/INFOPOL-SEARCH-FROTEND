@@ -1,0 +1,43 @@
+.auth-container {
+  @apply max-w-md mx-auto mt-12 p-6 bg-white rounded-lg shadow-md;
+}
+
+.auth-container h2 {
+  @apply text-2xl font-bold text-gray-800 mb-6 text-center;
+}
+
+.auth-container form {
+  @apply space-y-4 mb-4;
+}
+
+.auth-container form div {
+  @apply form-group;
+}
+
+.auth-container label {
+  @apply label;
+}
+
+.auth-container input {
+  @apply input-field;
+}
+
+.auth-container button {
+  @apply btn btn-primary w-full mt-2;
+}
+
+.auth-container .error {
+  @apply bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4;
+}
+
+.auth-container .success {
+  @apply bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4;
+}
+
+.auth-container a {
+  @apply text-primary-600 hover:text-primary-800 font-medium;
+}
+
+.auth-container div:last-child {
+  @apply text-center mt-4;
+}

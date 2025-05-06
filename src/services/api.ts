@@ -148,9 +148,6 @@ export const apiService = {
     error: string | null;
   }> {
     try {
-      // Set loading state
-      const loadingState = { boDetails: null, isLoading: true, error: null };
-
       // Format the request body according to the server requirements
       const requestBody = {
         search_terms: [],
@@ -249,7 +246,7 @@ export const apiService = {
 
 // Mock API service for testing and development
 export const mockApiService = {
-  async searchReports(params: SearchParams): Promise<SearchResponse> {
+  async searchReports(_params: SearchParams): Promise<SearchResponse> {
     // Simulate API delay
     await new Promise((resolve) => setTimeout(resolve, 500));
 
